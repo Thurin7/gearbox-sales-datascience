@@ -127,7 +127,4 @@ streamlit · plotly
 ## 👤 Auteur
 
 **Thurin**  
-Étudiant Data Science / Data Analyst  
-[LinkedIn](https://linkedin.com/in/ton-profil) · [GitHub](https://github.com/ton-username)
-
----
+Étudiant Data Science / Data Analyst 
