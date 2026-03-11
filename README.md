@@ -152,10 +152,8 @@ streamlit run app.py
 
 ## 👤 Auteur
 
-**[Ton Prénom Nom]**  
-Étudiant en alternance — Data Science / Data Analyst  
+**Thurin**  
+Étudiant Data Science / Data Analyst  
 [LinkedIn](https://linkedin.com/in/ton-profil) · [GitHub](https://github.com/ton-username)
 
 ---
-
-*Projet réalisé dans le cadre d'une candidature en alternance Data Science — 2025*
