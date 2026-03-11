@@ -75,15 +75,24 @@ with st.sidebar:
     st.markdown("### 🔧 Gearbox Sales Dashboard")
     st.markdown("---")
 
-    uploaded = st.file_uploader("📂 Charger les données (.xlsx)", type=['xlsx'])
-    if uploaded:
-        df = load_data(uploaded)
-        st.success(f"✅ {len(df)} lignes chargées")
+    # Chargement automatique du fichier inclus dans le repo
+    DEFAULT_FILE = "Gearbox_data_Test POwer BI_07 25.xlsx"
+    import os
+
+    if os.path.exists(DEFAULT_FILE):
+        df = load_data(DEFAULT_FILE)
+        st.success(f"✅ {len(df)} lignes chargées automatiquement")
     else:
-        st.info("⬆️ Upload le fichier Excel pour commencer")
-        st.markdown("**Format attendu :**")
-        st.markdown("- Year, Month\n- Market Region\n- Product type\n- REMAN / NEW Quantity & Gross sales")
-        st.stop()
+        # Fallback : upload manuel si le fichier n'est pas trouvé
+        uploaded = st.file_uploader("📂 Charger les données (.xlsx)", type=['xlsx'])
+        if uploaded:
+            df = load_data(uploaded)
+            st.success(f"✅ {len(df)} lignes chargées")
+        else:
+            st.info("⬆️ Upload le fichier Excel pour commencer")
+            st.markdown("**Format attendu :**")
+            st.markdown("- Year, Month\n- Market Region\n- Product type\n- REMAN / NEW Quantity & Gross sales")
+            st.stop()
 
     st.markdown("---")
     st.markdown("### 🎛️ Filtres")
