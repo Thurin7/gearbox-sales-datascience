@@ -124,32 +124,6 @@ streamlit · plotly
 ```
 
 ---
-
-## 🚀 Lancer le projet
-
-### 1. Cloner le repo
-```bash
-git clone https://github.com/TON_USERNAME/gearbox-sales-datascience.git
-cd gearbox-sales-datascience
-```
-
-### 2. Installer les dépendances
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Lancer le notebook
-```bash
-jupyter notebook Gearbox_Sales_DataScience.ipynb
-```
-
-### 4. Lancer le dashboard Streamlit
-```bash
-streamlit run app.py
-```
-
----
-
 ## 👤 Auteur
 
 **Thurin**  
